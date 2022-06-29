@@ -242,3 +242,45 @@ console.log( 9 ); // 9
 
 let sumOutside = sumNumbers(8, 10); // 18
 console.log(sumOutside * 1000)
+
+
+
+// FORMAS DE ESCRIBIR FUNCIONES
+
+// declaracion de funcion
+function functionDeclaration() {
+    return "Esto es una funcion de declaracion"
+}
+
+// expresion de funcion (menos utilizadas)
+let functionExpression = function() {
+    return "Esto es una funcion de expression"
+}
+
+// ES6 function de flecha
+let arrowFunction = () => {
+    return "Esto es una funcion de flecha"
+}
+
+functionDeclaration()
+functionExpression()
+arrowFunction()
+
+
+// una function que capitalize un nombre
+
+// function capitalize(string) {
+//     let capitalizedString = string[0].toUpperCase() + string.slice(1)
+//     return capitalizedString
+// }
+
+const capitalize = (string) => {
+    let capitalizedString = string[0].toUpperCase() + string.slice(1)
+    return capitalizedString
+}
+
+console.log( capitalize("bob") )
+console.log( capitalize("hola") )
+console.log( capitalize("goku") )
+console.log( capitalize("gohan") )
+
